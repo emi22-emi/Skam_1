@@ -21,6 +21,7 @@ function setup() {
 
 function draw() {
   background('#40068B');
+  
 
   let wh = 3 * windowHeight / 4;
   let centerX = windowWidth / 2;
@@ -54,6 +55,9 @@ function draw() {
   if (mouseX > centerX - rw / 2 && mouseX < centerX + rw / 2 &&
       mouseY > cpY - rh / 2 && mouseY < cpY + rh / 2 && mouseIsPressed) {
     fill(255, 85, 200);
+    if (mouseIsPressed); {     window.location.href='https://kornelia2211.github.io/Scam_2/';
+      print('go!');
+   }
   } else {
     fill(255, 85, 0);
   }
