@@ -15,7 +15,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
   textAlign(CENTER, CENTER);
-  // Ustawienie końca odliczania (10 minut od uruchomienia)
+
   endTime = millis() + 10 * 60 * 1000;
 }
 
@@ -37,7 +37,7 @@ function draw() {
     image(zdj3, width - 530, -230);
   }
 
-  // LICZNIK CZASU (nad przyciskiem)
+  
   let remaining = endTime - millis();
   if (remaining < 0) {
     remaining = 0;
@@ -50,7 +50,7 @@ function draw() {
   textSize(24);
   text(timeStr, centerX, cpY - rh); // nad przyciskiem
 
-  // PRZYCISK
+ 
   fill('#FF6600');
   if (mouseX > centerX - rw / 2 && mouseX < centerX + rw / 2 &&
       mouseY > cpY - rh / 2 && mouseY < cpY + rh / 2 && mouseIsPressed) {
